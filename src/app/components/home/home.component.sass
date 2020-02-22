@@ -1,0 +1,105 @@
+@font-face
+  font-family: 'Radikal'
+  src: url('../../../assets/fonts/Radikal.ttf')
+
+section
+    display: flex
+    justify-content: space-between
+    height: 100vh
+    width: 100%
+    position: relative
+    .container_map
+        width: 75%
+        height: 100%
+        background-color: #e4e9f1
+    .container_profile
+        position: absolute
+        z-index: 2
+        top: 2rem
+        left: 5rem
+        display: flex
+        align-items: center
+        .profile
+            width: 3rem
+            border-radius: 2rem
+            border: 2px solid white
+            box-shadow: 0px 0px 6px -1px #0000006b
+        .user_info
+            display: flex
+            flex-direction: column
+            margin-left: 1rem
+            font-family: Radikal
+            background-color: #e6ecf36b
+            border-radius: .3rem
+            padding: .3rem
+            box-shadow: 0px 0px 2px 0px #e6ecf36b
+            .name_user
+                color: #353E4D
+                font-size: .9rem
+            .lema
+                font-size: .7rem
+                color: #353e4db5
+    .container_info
+        flex: 1
+        padding: 2rem 2rem
+        box-shadow: 3px 0px 8px -1px #00000059
+        background-color: #FFFFFF
+        border-left: 1px solid #80808017
+        .info_header
+            display: flex
+            justify-content: space-between
+            border-bottom: 1px solid #E6EAEE
+            padding-bottom: .5rem
+            .info_left
+                display: flex
+                flex-direction: column
+                .name_city
+                    color: #353E4D
+                    font-size: 1rem
+                    font-family: Radikal
+                    margin-bottom: .3rem
+                    .state_city
+                        color: #3AAEAD
+                        font-size: .65rem
+                .label_city
+                    font-family: Radikal
+                    font-size: .7rem
+                    color: #8698A9
+            .info_rigth
+                display: flex
+                align-items: center
+                color: #7E91A4
+                i
+                    font-size: .8rem
+                .temperature
+                    color: #7E91A4
+                    font-size: .7rem
+                    font-family: Radikal
+                    margin-left: .3rem
+        .info_option
+            font-family: Radikal
+            height: 4rem
+            align-items: center
+            display: flex
+            border-bottom: 1px solid #E6EAEE
+            .icon_option
+                font-weight: 900
+                font-size: .65rem
+                margin-right: .5rem
+                color: #8395A9
+            .name_option
+                font-size: .85rem
+                color: #353E4D
+            .value_option
+                color: #8395A9
+                font-size: .7rem
+                margin-left: .5rem
+        .containe_images
+            display: flex
+            flex-direction: column
+            overflow: scroll
+            height: 13rem
+            .image_city
+                width: 100%
+                padding: .5rem
+                box-sizing: border-box

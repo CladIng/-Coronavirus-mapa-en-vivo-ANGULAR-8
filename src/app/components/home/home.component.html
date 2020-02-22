@@ -1,0 +1,37 @@
+<section>
+    <div class="container_profile">
+        <img src="https://avatars1.githubusercontent.com/u/11061396?s=460&v=4" alt="" class="profile">
+        <div class="user_info">
+            <span class="name_user">Cesar L Diaz A</span>
+            <span class="lema">Sigue en tiempo real el <strong>Coronavirus</strong></span>
+        </div>
+    </div>
+    <div class="container_map" id="map_location" >
+    </div>
+    <div class="container_info">
+        <div class="info_header">
+            <div class="info_left">
+                <span class="name_city">Suda Africa <i  class="fas fa-circle state_city"></i> </span>
+                <span class="label_city">País</span>
+            </div>
+            <div class="info_rigth">
+                <i class="fas fa-cloud-sun"></i><span class="temperature">67°F</span>
+            </div>
+        </div>
+        <div class="info_option">
+            <i class="fas fa-user-injured icon_option"></i> <span class="name_option">Personas contagiadas: </span> <span class="value_option">29</span>
+        </div>
+        <div class="info_option">
+            <i class="fas fa-map-marked icon_option" ></i> <span class="name_option">Longitude: </span> <span class="value_option">-2.323423</span>
+        </div>
+        <div class="info_option">
+            <i class="fas fa-map-marked-alt icon_option"></i> <span class="name_option">Latitud: </span> <span class="value_option">1.211123423</span>
+        </div>
+        <div class="info_option">
+            <i class="far fa-images icon_option"></i> <span class="name_option">Imagenes del país: </span>
+        </div>
+        <div class="containe_images">
+            <img class="image_city" *ngFor="let image of images" [src]="image" alt="">
+        </div>
+    </div>
+</section>
